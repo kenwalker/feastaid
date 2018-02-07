@@ -1,0 +1,39 @@
+<template name="main">
+  <div id="main">
+    <div class="header">
+      <h2>FeastAid</h2>
+    </div>
+    <div class="content">
+      <div class="pure-g">
+        <div class="pure-u-1">
+          <center>
+            {{> loginButtons}}
+          </center>
+        </div>
+      </div>
+      {{#if userLoggedIn}}
+      <div class="pure-g">
+        <div class="pure-u-1">
+          <center>
+            <p>Select and modify any allergen or dietary restrictions below</p>
+            <button class="button-xlarge pure-button allergen">
+              Allergen concerns</button>
+            <button class="button-xlarge pure-button dietary">
+              Dietary concerns</button>
+            <hr>
+            <p>If you are an event planner, select the button below to go to your list of upcoming events</p>
+            <button class="button-xlarge pure-button eventlist">
+              <i class="fas fa-utensils fa-lg"></i>
+              Select an upcoming event</button>
+          </center>
+        </div>
+      </div>
+      {{else}}
+      <p>FeastAid is an application to track a Facebook users Allergen and Dietary concerns. This information is used by event
+        organizers to produce an anonomized checklist of allergies and dietary constraints for those attending.
+      </p>
+      <p>Login with your Facebook account and update your profile or if you are an event organizer generate the checklist.</p>
+      {{/if}}
+    </div>
+  </div>
+</template>

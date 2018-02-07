@@ -1,0 +1,43 @@
+<template name="eventlist">
+        <div id="main">
+        <div id="eventlist">
+            <div class="header">
+            <h2>Pick an Event</h2>
+            </div>
+            <div class="content">
+                <p>Choose an event and FeastAid will retrieve the list of attendees,
+                    cross reference with the users who have registered their preferences
+                    on this application and produce a list of Allergen and Dietary needs.
+                    Only events you have been invited to or have said you are attending will show up.</p>
+            <hr>
+            {{#if searching}}
+                <p>Searching...</p>
+            {{else}}
+                {{#if events.count}}
+                    <div>
+                    <ul class="listofevents">
+                        {{#each events}}
+                            {{> event}}
+                        {{/each}}
+                    </ul>
+                    </div>
+                {{else}}
+                You have no upcoming events you are invited to or attending. You must be invited
+                to an Event to see it in order to generate the Allergen and Dietary lists.
+                {{/if}}
+            {{/if}}
+            </div>
+        </div>
+        </div>
+</template>
+
+<template name="event">  
+    <li class="event">
+        {{#if attending}}
+            <i class="eventicon far fa-calendar-check fa-lg"></i>
+        {{else}}
+        <i class="far fa-calendar fa-lg"></i>
+        {{/if}}
+        {{name}} {{tagDate}}
+    </li>
+</template> 
