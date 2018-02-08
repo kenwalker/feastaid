@@ -7,7 +7,7 @@ toggleAll = null;
 toggleClass = null;
 eventHandle = null;
 
-Meteor.startup(function() {
+Meteor.startup(function () {
   Accounts.ui.config({
     requestPermissions: {
       facebook: ['user_events']
@@ -20,38 +20,38 @@ Meteor.startup(function() {
   Meteor.subscribe('dietary.js');
   Events = new Mongo.Collection('events');
 
-  Accounts.onLogin(function() {
+  Accounts.onLogin(function () {
     // console.log("Calling Facebook client");
     // eventHandle = Meteor.subscribe('events');
   });
 
-  Accounts.onLogout(function() {
+  Accounts.onLogout(function () {
     // console.log("Unsubscribing");
     // eventHandle.stop();
   })
 
-  hookContentMenuToggle = function() {
-    content  = document.getElementById('main');
-    content.onclick = function(e) {
+  hookContentMenuToggle = function () {
+    content = document.getElementById('main');
+    content.onclick = function (e) {
       if (menu.className.indexOf('active') !== -1) {
         toggleAll(e);
       }
     };
   };
-  toggleAll = function(e) {
+  toggleAll = function (e) {
     var active = 'active';
-  
+
     e.preventDefault();
     toggleClass(layout, active);
     toggleClass(menu, active);
     toggleClass(menuLink, active);
   };
-  toggleClass = function(element, className) {
+  toggleClass = function (element, className) {
     var classes = element.className.split(/\s+/),
       length = classes.length,
       i = 0;
-  
-    for(; i < length; i++) {
+
+    for (; i < length; i++) {
       if (classes[i] === className) {
         classes.splice(i, 1);
         break;
@@ -61,7 +61,7 @@ Meteor.startup(function() {
     if (length === classes.length) {
       classes.push(className);
     }
-  
+
     element.className = classes.join(' ');
   };
 });
