@@ -6,6 +6,7 @@ import './main.js';
 import './about.js';
 import './eventlist.js';
 import './allergens.js';
+import './dietary.js';
 import './body.html';
 
 Template.body.onRendered(function bodyOnRendered() {
@@ -69,6 +70,13 @@ Template.body.events({
       return;
     }
     Session.set("templateName", "allergens");
+    setTimeout(hookContentMenuToggle, 100);
+  },
+  "click .dietary": function(e) {
+    if (Session.get("templateName") === "dietary") {
+      return;
+    }
+    Session.set("templateName", "dietary");
     setTimeout(hookContentMenuToggle, 100);
   },
   "click .about": function() {

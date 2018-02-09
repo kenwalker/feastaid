@@ -1,6 +1,10 @@
 /* CSS declarations go here */
 /* layers control */
 
+.dietarycheckbox {
+    padding-top: 8px;
+}
+
 .past-guardians-list {
     text-align: center;
 }
