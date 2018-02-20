@@ -1,0 +1,70 @@
+<template name="feastaid">
+    <div id="main">
+        <div id="feastaid">
+            <div class="header">
+                <h2>Results</h2>
+            </div>
+            <div class="content">
+                {{#if buildingFeastAid}}
+                <center>
+                    <p>Computing event allergens...</p>
+                </center>
+                {{else}} {{#each feastaids}} {{> overview}} {{/each}}
+                <hr>
+                <center>
+                    <button class="button-xlarge pure-button main">
+                        Main page</button>
+                </center>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="overview">
+    <h3>Event Information</h3>
+    <p> {{ eventName }}
+        <br> {{eventDate}}
+        <br> There are {{ attendees}} confirmed attendees
+        <br> {{ registered }} registered in FeastAid
+    </p>
+    {{ setNoAllergens true }}
+    {{ resetAllergentCount }}
+    <div class="pure-g">
+    {{#each allergen in allAllergens }}
+        {{#if displayAllergen allergen}}
+            {{#if newAllergenGroup }}
+                {{ setNoAllergens false }}
+                {{ updateAllergenGroup }}
+                <div class="pure-u-1">
+                    <h4>{{ getCurrentAllergenGroup }}</h4>
+                </div>
+                <div class="pure-u-3-5">
+                </div>
+                <div class="pure-u-1-5"><center>Mild</center></div>
+                <div class="pure-u-1-5"><center>Severe</center></div>
+            {{/if}}
+            <div class="pure-u-3-5">
+            {{ nameForAllergen allergen }}
+            </div>
+            <div class="pure-u-1-5">
+                {{#if hasMileValueFor allergen }}
+                    <center>{{ mildValueFor allergen}}</center>
+                {{/if}}
+            </div>
+            <div class="pure-u-1-5">
+            {{#if hasSevereValueFor allergen }}
+                <center>{{ severeValueFor allergen }}</center>
+            {{/if}}
+            </div>
+        {{/if}}
+        {{ incrementAllergenCount }}
+    {{/each}}
+    {{#if getNoAllergens }}
+    <div class="pure-u-1">
+        There were no allergens in the results
+    </div>
+    {{/if}}
+    </div>
+    
+</template>

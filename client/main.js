@@ -2,12 +2,25 @@ import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { HTTP } from 'meteor/http'
 import '../imports/ui/body.js';
+import '../imports/ui/allergens.js';
+
 hookContentMenuToggle = null;
 toggleAll = null;
 toggleClass = null;
 eventHandle = null;
+scrollToTop = null;
 
 Meteor.startup(function () {
+
+  var mediaQueryList = window.matchMedia('print');
+  mediaQueryList.addListener(function(mql) {
+    if (mql.matches) {
+        console.log('onbeforeprint equivalent');
+    } else {
+        console.log('onafterprint equivalent');
+    }
+  });
+
   Accounts.ui.config({
     requestPermissions: {
       facebook: ['user_events']
@@ -17,8 +30,9 @@ Meteor.startup(function () {
 
   Session.setDefault("templateName", "main");
   Meteor.subscribe('allergens');
-  Meteor.subscribe('dietary.js');
+  Meteor.subscribe('dietary');
   Events = new Mongo.Collection('events');
+  FeastAid = new Mongo.Collection('feastaid');
 
   Accounts.onLogin(function () {
     // console.log("Calling Facebook client");
@@ -30,11 +44,16 @@ Meteor.startup(function () {
     // eventHandle.stop();
   })
 
+  scrollToTop = function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  };
+
   hookContentMenuToggle = function () {
     content = document.getElementById('main');
     content.onclick = function (e) {
       if (menu.className.indexOf('active') !== -1) {
         toggleAll(e);
+        $("html, body").animate({ scrollTop: 0 }, "slow");
       }
     };
   };

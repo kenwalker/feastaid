@@ -5,95 +5,248 @@
                 <h2>Dietary</h2>
             </div>
             <div class="content">
-                <p>Please only pick the requirements you need</p>
-                    <form class="pure-form pure-g">
+                <form class="pure-form pure-g">
+                    <div class="pure-u-1">
+                        <h3>Restrictions</h3>
+                        <p>Choose the items that you cannot eat in accordance with your dietary restrictions</p>
+                    </div>
                     <section>
-                            <div class="pure-u-4-5">
-                                <h3>Vegetarian</h3>
-                            </div>
-                            <div class="pure-u-1-5 dietarycheckbox">
-
-                                <label class="switch-light switch-ios" onclick="">
-                                    <input type="checkbox">
-                                    <span>
-                                        <span>No</span>
-                                        <span>Yes</span>
-                                        <a></a>
-                                    </span>
-                                </label>
-                            </div>
-                            <div class="pure-u-4-5">
-                                <h3>Vegan</h3>
-                            </div>
-                            <div class="pure-u-1-5 dietarycheckbox">
-
-                                <label class="switch-light switch-ios" onclick="">
-                                    <input type="checkbox">
-                                    <span>
-                                        <span>No</span>
-                                        <span>Yes</span>
-                                        <a></a>
-                                    </span>
-                                </label>
+                        <div class="pure-u-3-5">
                         </div>
-                        <div class="pure-u-4-5">
-                                <h3>Kosher</h3>
-                            </div>
-                            <div class="pure-u-1-5 dietarycheckbox">
+                        <div class="pure-u-1-5">
 
-                                <label class="switch-light switch-ios" onclick="">
-                                    <input type="checkbox">
-                                    <span>
-                                        <span>No</span>
-                                        <span>Yes</span>
-                                        <a></a>
-                                    </span>
-                                </label>
+                            <label>
+                                <center>Ok</center>
+                            </label>
                         </div>
-                        <div class="pure-u-4-5">
-                                <h3>Halal</h3>
-                            </div>
-                            <div class="pure-u-1-5 dietarycheckbox">
-
-                                <label class="switch-light switch-ios" onclick="">
-                                    <input type="checkbox">
-                                    <span>
-                                        <span>No</span>
-                                        <span>Yes</span>
-                                        <a></a>
-                                    </span>
-                                </label>
+                        <div class="pure-u-1-5">
+                            <label>
+                                <center>Not Ok</center>
+                            </label>
                         </div>
-                        <div class="pure-u-4-5">
-                                <h3>Paleo</h3>
-                            </div>
-                            <div class="pure-u-1-5 dietarycheckbox">
-
-                                <label class="switch-light switch-ios" onclick="">
-                                    <input type="checkbox">
-                                    <span>
-                                        <span>No</span>
-                                        <span>Yes</span>
-                                        <a></a>
-                                    </span>
-                                </label>
+                        <!-- dairy -->
+                        <div class="pure-u-3-5 allergen-name">
+                            Dairy
                         </div>
-                        <div class="pure-u-4-5">
-                                <h3>Keto</h3>
-                            </div>
-                            <div class="pure-u-1-5 dietarycheckbox">
-
-                                <label class="switch-light switch-ios" onclick="">
-                                    <input type="checkbox">
-                                    <span>
-                                        <span>No</span>
-                                        <span>Yes</span>
-                                        <a></a>
-                                    </span>
+                        <div class="pure-u-2-5">
+                            <div class="switch-toggle switch-2 switch-ios">
+                                <input id="ok-dairy" name="state-dairy" type="radio">
+                                <label for="ok-dairy" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
                                 </label>
+
+                                <input id="no-dairy" name="state-dairy" type="radio">
+                                <label for="no-dairy" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- eggs -->
+                        <div class="pure-u-3-5 allergen-name">
+                            Eggs
+                        </div>
+                        <div class="pure-u-2-5">
+                            <div class="switch-toggle switch-2 switch-ios">
+                                <input id="ok-eggs" name="state-eggs" type="radio">
+                                <label for="ok-eggs" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+                                </label>
+
+                                <input id="no-eggs" name="state-eggs" type="radio">
+                                <label for="no-eggs" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- fish -->
+                        <div class="pure-u-3-5 allergen-name">
+                            Fish
+                        </div>
+                        <div class="pure-u-2-5">
+                            <div class="switch-toggle switch-2 switch-ios">
+                                <input id="ok-fish" name="state-fish" type="radio">
+                                <label for="ok-fish" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+                                </label>
+
+                                <input id="no-fish" name="state-fish" type="radio">
+                                <label for="no-fish" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- honey -->
+                        <div class="pure-u-3-5 allergen-name">
+                            Honey
+                        </div>
+                        <div class="pure-u-2-5">
+                            <div class="switch-toggle switch-2 switch-ios">
+                                <input id="ok-honey" name="state-honey" type="radio">
+                                <label for="ok-honey" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+                                </label>
+
+                                <input id="no-honey" name="state-honey" type="radio">
+                                <label for="no-honey" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- poultry -->
+                        <div class="pure-u-3-5 allergen-name">
+                            Poultry/Chicken
+                        </div>
+                        <div class="pure-u-2-5">
+                            <div class="switch-toggle switch-2 switch-ios">
+                                <input id="ok-poultry" name="state-poultry" type="radio">
+                                <label for="ok-poultry" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+                                </label>
+
+                                <input id="no-poultry" name="state-poultry" type="radio">
+                                <label for="no-poultry" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- redmeat -->
+                        <div class="pure-u-3-5 allergen-name">
+                            Red Meat
+                        </div>
+                        <div class="pure-u-2-5">
+                            <div class="switch-toggle switch-2 switch-ios">
+                                <input id="ok-redmeat" name="state-redmeat" type="radio">
+                                <label for="ok-redmeat" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+                                </label>
+
+                                <input id="no-redmeat" name="state-redmeat" type="radio">
+                                <label for="no-redmeat" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+
+                        <!-- shellfish -->
+                        <div class="pure-u-3-5 allergen-name">
+                            Shellfish
+                        </div>
+                        <div class="pure-u-2-5">
+                            <div class="switch-toggle switch-2 switch-ios">
+                                <input id="ok-shellfish" name="state-shellfish" type="radio">
+                                <label for="ok-shellfish" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+                                </label>
+
+                                <input id="no-shellfish" name="state-shellfish" type="radio">
+                                <label for="no-shellfish" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+
+                        <!-- slaughter -->
+                        <div class="pure-u-3-5 allergen-name">
+                            Slaughter by-products
+                        </div>
+                        <div class="pure-u-2-5">
+                            <div class="switch-toggle switch-2 switch-ios">
+                                <input id="ok-slaughter" name="state-slaughter" type="radio">
+                                <label for="ok-slaughter" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+                                </label>
+
+                                <input id="no-slaughter" name="state-slaughter" type="radio">
+                                <label for="no-slaughter" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                    <div class="pure-u-1">
+                        <h3>Religious or Diet</h3>
+                        <p>If you have a religious or a particular diet, toggle the appropriate option below</p>
+                    </div>
+                    <section>
+                        <div class="pure-u-1 dietarycheckbox">
+                            <label class="switch-light switch-ios" onclick="">
+                                <input id="halal" type="checkbox">
+                                <span>
+                                    <span>Halal</span>
+                                    <span>Halal</span>
+                                    <a></a>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="pure-u-1 dietarycheckbox">
+                            <label class="switch-light switch-ios" onclick="">
+                                <input id="keto" type="checkbox">
+                                <span>
+                                    <span>Keto</span>
+                                    <span>Keto</span>
+                                    <a></a>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="pure-u-1 dietarycheckbox">
+                            <label class="switch-light switch-ios" onclick="">
+                                <input id="kosher" type="checkbox">
+                                <span>
+                                    <span>Kosher</span>
+                                    <span>Kosher</span>
+                                    <a></a>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="pure-u-1 dietarycheckbox">
+                            <label class="switch-light switch-ios" onclick="">
+                                <input id="paleo" type="checkbox">
+                                <span>
+                                    <span>Paleo</span>
+                                    <span>Paleo</span>
+                                    <a></a>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="pure-u-1 dietarycheckbox">
+                            <label class="switch-light switch-ios" onclick="">
+                                <input id="vegan" type="checkbox">
+                                <span>
+                                    <span>Vegan</span>
+                                    <span>Vegan</span>
+                                    <a></a>
+                                </span>
+                            </label>
                         </div>
                     </section>
                 </form>
+                <center>
+                    <hr>
+                    <p>Switch to...</p>
+                    <button class="button-xlarge pure-button allergens">
+                        Allergen concerns</button>
+                    <button class="button-xlarge pure-button main">
+                        Main page</button>
+                </center>
             </div>
         </div>
     </div>

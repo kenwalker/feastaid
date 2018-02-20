@@ -2,7 +2,6 @@ import { Template } from 'meteor/templating';
 
 import './eventlist.html';
 
-
 Tracker.autorun(function() {
     if (Session.get("templateName") === "eventlist") {
         var searchHandle = Meteor.subscribe('events');
@@ -27,4 +26,11 @@ Template.event.helpers({
     attending() {
         return this.status === 1;
     }
-})
+});
+
+Template.eventlist.events({
+    'click li': function() {
+        Session.set('evendId', this.id);
+        Session.set("templateName", "feastaid");
+    }
+});

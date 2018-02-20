@@ -5,8 +5,8 @@
     padding-top: 8px;
 }
 
-.past-guardians-list {
-    text-align: center;
+.allergen-name {
+    padding-top: 6px;
 }
 
 .centeredimage {
@@ -101,11 +101,14 @@ This is the parent `<div>` that contains the menu and the content area.
 The content `<div>` is where all your content goes.
 */
 .content {
-    margin: 0 auto;
     padding: 0 2em;
-    max-width: 800px;
+    max-width: 400px;
     margin-bottom: 50px;
     line-height: 1.6em;
+}
+
+section {
+    min-width: 100%;
 }
 
 .header {

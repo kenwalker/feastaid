@@ -7,6 +7,7 @@ import './about.js';
 import './eventlist.js';
 import './allergens.js';
 import './dietary.js';
+import './feastaid.js';
 import './body.html';
 
 Template.body.onRendered(function bodyOnRendered() {
@@ -27,7 +28,6 @@ Template.body.onRendered(function bodyOnRendered() {
 });
 
 Template.body.onCreated(function bodyOnCreated() {
-  this.state = new ReactiveDict();
 });
 
 Template.body.helpers({
@@ -57,6 +57,7 @@ Template.body.events({
     }
     Session.set("templateName", "help");
     setTimeout(hookContentMenuToggle, 100);
+    setTimeout(scrollToTop, 200);
   },
   "click .eventlist": function(e) {
     if (Session.get("templateName") === "eventlist") {
@@ -64,6 +65,7 @@ Template.body.events({
     }
     Session.set("templateName", "eventlist");
     setTimeout(hookContentMenuToggle, 100);
+    setTimeout(scrollToTop, 200);
   },
   "click .allergens": function(e) {
     if (Session.get("templateName") === "allergens") {
@@ -71,6 +73,15 @@ Template.body.events({
     }
     Session.set("templateName", "allergens");
     setTimeout(hookContentMenuToggle, 100);
+    setTimeout(scrollToTop, 200);
+  },
+  "click .main": function(e) {
+    if (Session.get("templateName") === "main") {
+      return;
+    }
+    Session.set("templateName", "main");
+    setTimeout(hookContentMenuToggle, 100);
+    setTimeout(scrollToTop, 200);
   },
   "click .dietary": function(e) {
     if (Session.get("templateName") === "dietary") {
@@ -78,6 +89,7 @@ Template.body.events({
     }
     Session.set("templateName", "dietary");
     setTimeout(hookContentMenuToggle, 100);
+    setTimeout(scrollToTop, 200);
   },
   "click .about": function() {
     if (Session.get("templateName") === "about") {
@@ -85,5 +97,6 @@ Template.body.events({
     }
     Session.set("templateName", "about");
     setTimeout(hookContentMenuToggle, 100);
+    setTimeout(scrollToTop, 200);
   }
 });

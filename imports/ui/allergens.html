@@ -28,37 +28,14 @@
                                 <center>Severe</center>
                             </label>
                         </div>
-                        <!-- milk -->
-                        <div class="pure-u-2-5">
-                            Milk
-                        </div>
-                        <div class="pure-u-3-5">
-                            <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-milk" name="state-milk" type="radio">
-                                <label for="none-milk" onclick="">
-                                    <i class="far fa-smile fa-lg"></i>
-                                </label>
-
-                                <input id="mild-milk" name="state-milk" type="radio">
-                                <label for="mild-milk" onclick="">
-                                    <i class="far fa-meh fa-lg"></i>
-                                </label>
-
-                                <input id="bad-milk" name="state-milk" type="radio">
-                                <label for="bad-milk" onclick="">
-                                    <i class="far fa-frown fa-lg"></i>
-                                </label>
-                                <a></a>
-                            </div>
-                        </div>
                         <!-- eggs -->
-                        <div class="pure-u-2-5">
+                        <div class="pure-u-2-5 allergen-name">
                             Eggs
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-eggs" name="state-eggs" type="radio">
-                                <label for="none-eggs" onclick="">
+                                <input id="ok-eggs" name="state-eggs" type="radio">
+                                <label for="ok-eggs" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
                                 </label>
 
@@ -67,8 +44,8 @@
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-eggs" name="state-eggs" type="radio">
-                                <label for="bad-eggs" onclick="">
+                                <input id="severe-eggs" name="state-eggs" type="radio">
+                                <label for="severe-eggs" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
 
@@ -76,61 +53,60 @@
                             </div>
                         </div>
                         <!-- Latex -->
-                        <div class="pure-u-2-5">
+                        <div class="pure-u-2-5 allergen-name">
                             Latex
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-Latex" name="state-Latex" type="radio">
-                                <label for="none-Latex" onclick="">
+                                <input id="ok-latex" name="state-latex" type="radio">
+                                <label for="ok-latex" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
                                 </label>
 
-                                <input id="mild-Latex" name="state-Latex" type="radio">
-                                <label for="mild-Latex" onclick="">
+                                <input id="mild-latex" name="state-latex" type="radio">
+                                <label for="mild-latex" onclick="">
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-Latex" name="state-Latex" type="radio">
-                                <label for="bad-Latex" onclick="">
+                                <input id="severe-latex" name="state-latex" type="radio">
+                                <label for="severe-latex" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
 
                                 <a></a>
                             </div>
                         </div>
-                        <!-- soy -->
-                        <div class="pure-u-2-5">
-                            Soy
+                        <!-- milk -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Milk
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-soy" name="state-soy" type="radio">
-                                <label for="none-soy" onclick="">
+                                <input id="ok-milk" name="state-milk" type="radio">
+                                <label for="ok-milk" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
                                 </label>
 
-                                <input id="mild-soy" name="state-soy" type="radio">
-                                <label for="mild-soy" onclick="">
+                                <input id="mild-milk" name="state-milk" type="radio">
+                                <label for="mild-milk" onclick="">
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-soy" name="state-soy" type="radio">
-                                <label for="bad-soy" onclick="">
+                                <input id="severe-milk" name="state-milk" type="radio">
+                                <label for="severe-milk" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
-
                                 <a></a>
                             </div>
                         </div>
                         <!-- peanuts -->
-                        <div class="pure-u-2-5">
+                        <div class="pure-u-2-5 allergen-name">
                             Peanuts
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-peanuts" name="state-peanuts" type="radio">
-                                <label for="none-peanuts" onclick="">
+                                <input id="ok-peanuts" name="state-peanuts" type="radio">
+                                <label for="ok-peanuts" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
                                 </label>
 
@@ -139,8 +115,80 @@
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-peanuts" name="state-peanuts" type="radio">
-                                <label for="bad-peanuts" onclick="">
+                                <input id="severe-peanuts" name="state-peanuts" type="radio">
+                                <label for="severe-peanuts" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- soy -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Soy
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-soy" name="state-soy" type="radio">
+                                <label for="ok-soy" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+                                </label>
+
+                                <input id="mild-soy" name="state-soy" type="radio">
+                                <label for="mild-soy" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-soy" name="state-soy" type="radio">
+                                <label for="severe-soy" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- treenuts -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Tree Nuts
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-treenuts" name="state-treenuts" type="radio">
+                                <label for="ok-treenuts" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+                                </label>
+
+                                <input id="mild-treenuts" name="state-treenuts" type="radio">
+                                <label for="mild-treenuts" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-treenuts" name="state-treenuts" type="radio">
+                                <label for="severe-treenuts" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- nonwheatgluten -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Non-Wheat Gluten
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-nonwheatgluten" name="state-nonwheatgluten" type="radio" checked="checked">
+                                <label for="ok-nonwheatgluten" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+                                </label>
+
+                                <input id="mild-nonwheatgluten" name="state-nonwheatgluten" type="radio">
+                                <label for="mild-nonwheatgluten" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-nonwheatgluten" name="state-nonwheatgluten" type="radio">
+                                <label for="severe-nonwheatgluten" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
 
@@ -148,13 +196,13 @@
                             </div>
                         </div>
                         <!-- wheat -->
-                        <div class="pure-u-2-5">
+                        <div class="pure-u-2-5 allergen-name">
                             Wheat
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-wheat" name="state-wheat" type="radio">
-                                <label for="none-wheat" onclick="">
+                                <input id="ok-wheat" name="state-wheat" type="radio" checked="checked">
+                                <label for="ok-wheat" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
                                 </label>
 
@@ -163,8 +211,8 @@
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-wheat" name="state-wheat" type="radio">
-                                <label for="bad-wheat" onclick="">
+                                <input id="severe-wheat" name="state-wheat" type="radio">
+                                <label for="severe-wheat" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
 
@@ -175,6 +223,328 @@
 
                     <div class="pure-u-1">
                         <h3>Fruits</h3>
+                    </div>
+                    <section>
+                        <div class="pure-u-2-5">
+                        </div>
+                        <div class="pure-u-1-5">
+                            <label>
+                                <center>Ok</center>
+                            </label>
+                        </div>
+                        <div class="pure-u-1-5">
+                            <label>
+                                <center>Mild</center>
+                            </label>
+                        </div>
+                        <div class="pure-u-1-5">
+                            <label>
+                                <center>Severe</center>
+                            </label>
+                        </div>
+                        <!-- apple -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Apple
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-apple" name="state-apple" type="radio">
+                                <label for="ok-apple" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+                                </label>
+
+                                <input id="mild-apple" name="state-apple" type="radio">
+                                <label for="mild-apple" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-apple" name="state-apple" type="radio">
+                                <label for="severe-apple" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- avocado -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Avocado
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-avocado" name="state-avocado" type="radio">
+                                <label for="ok-avocado" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-avocado" name="state-avocado" type="radio">
+                                <label for="mild-avocado" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-avocado" name="state-avocado" type="radio">
+                                <label for="severe-avocado" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- citrus -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Citrus
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-citrus" name="state-citrus" type="radio">
+                                <label for="ok-citrus" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-citrus" name="state-citrus" type="radio">
+                                <label for="mild-citrus" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-citrus" name="state-citrus" type="radio">
+                                <label for="severe-citrus" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- kiwi -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Kiwi
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-kiwi" name="state-kiwi" type="radio">
+                                <label for="ok-kiwi" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-kiwi" name="state-kiwi" type="radio">
+                                <label for="mild-kiwi" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-kiwi" name="state-kiwi" type="radio">
+                                <label for="severe-kiwi" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- melons -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Melons
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-melons" name="state-melons" type="radio">
+                                <label for="ok-melons" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-melons" name="state-melons" type="radio">
+                                <label for="mild-melons" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-melons" name="state-melons" type="radio">
+                                <label for="severe-melons" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- pear -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Pear
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-pear" name="state-pear" type="radio">
+                                <label for="ok-pear" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-pear" name="state-pear" type="radio">
+                                <label for="mild-pear" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-pear" name="state-pear" type="radio">
+                                <label for="severe-pear" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- peppers -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Peppers
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-peppers" name="state-peppers" type="radio">
+                                <label for="ok-peppers" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-peppers" name="state-peppers" type="radio">
+                                <label for="mild-peppers" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-peppers" name="state-peppers" type="radio">
+                                <label for="severe-peppers" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- pineapple -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Pineapple
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-pineapple" name="state-pineapple" type="radio">
+                                <label for="ok-pineapple" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-pineapple" name="state-pineapple" type="radio">
+                                <label for="mild-pineapple" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-pineapple" name="state-pineapple" type="radio">
+                                <label for="severe-pineapple" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- stonefruits -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Stone Fruits
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-stonefruits" name="state-stonefruits" type="radio">
+                                <label for="ok-stonefruits" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-stonefruits" name="state-stonefruits" type="radio">
+                                <label for="mild-stonefruits" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-stonefruits" name="state-stonefruits" type="radio">
+                                <label for="severe-stonefruits" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- strawberry -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Strawberry
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-strawberry" name="state-strawberry" type="radio">
+                                <label for="ok-strawberry" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-strawberry" name="state-strawberry" type="radio">
+                                <label for="mild-strawberry" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-strawberry" name="state-strawberry" type="radio">
+                                <label for="severe-strawberry" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- Tomato -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Tomato
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-tomato" name="state-tomato" type="radio">
+                                <label for="ok-tomato" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-tomato" name="state-tomato" type="radio">
+                                <label for="mild-tomato" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-tomato" name="state-tomato" type="radio">
+                                <label for="severe-tomato" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- zucchini -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Zucchini
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-zucchini" name="state-zucchini" type="radio">
+                                <label for="ok-zucchini" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-zucchini" name="state-zucchini" type="radio">
+                                <label for="mild-zucchini" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-zucchini" name="state-zucchini" type="radio">
+                                <label for="severe-zucchini" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="pure-u-1">
+                        <h3>Vegetables</h3>
                     </div>
                     <section>
                         <div class="pure-u-2-5">
@@ -195,99 +565,548 @@
                                 <center>Severe</center>
                             </label>
                         </div>
-                        <!-- apple -->
-                        <div class="pure-u-2-5">
-                            Apple
+                        <!-- beet -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Beet
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-apple" name="state-apple" type="radio">
-                                <label for="none-apple" onclick="">
+                                <input id="ok-beet" name="state-beet" type="radio">
+                                <label for="ok-beet" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
+
                                 </label>
 
-                                <input id="mild-apple" name="state-apple" type="radio">
-                                <label for="mild-apple" onclick="">
+                                <input id="mild-beet" name="state-beet" type="radio">
+                                <label for="mild-beet" onclick="">
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-apple" name="state-apple" type="radio">
-                                <label for="bad-apple" onclick="">
+                                <input id="severe-beet" name="state-beet" type="radio">
+                                <label for="severe-beet" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
 
                                 <a></a>
                             </div>
                         </div>
-                        <!-- avocado -->
-                        <div class="pure-u-2-5">
-                            Avocado
+                        <!-- cabbage -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Cabbage
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-avocado" name="state-avocado" type="radio">
-                                <label for="none-avocado" onclick="">
+                                <input id="ok-cabbage" name="state-cabbage" type="radio">
+                                <label for="ok-cabbage" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
 
                                 </label>
 
-                                <input id="mild-avocado" name="state-avocado" type="radio">
-                                <label for="mild-avocado" onclick="">
+                                <input id="mild-cabbage" name="state-cabbage" type="radio">
+                                <label for="mild-cabbage" onclick="">
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-avocado" name="state-avocado" type="radio">
-                                <label for="bad-avocado" onclick="">
+                                <input id="severe-cabbage" name="state-cabbage" type="radio">
+                                <label for="severe-cabbage" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
 
                                 <a></a>
                             </div>
                         </div>
-                        <!-- Tomato -->
-                        <div class="pure-u-2-5">
-                            Tomato
+                        <!-- carrot -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Carrot
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-Tomato" name="state-Tomato" type="radio">
-                                <label for="none-Tomato" onclick="">
+                                <input id="ok-carrot" name="state-carrot" type="radio">
+                                <label for="ok-carrot" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
 
                                 </label>
 
-                                <input id="mild-Tomato" name="state-Tomato" type="radio">
-                                <label for="mild-Tomato" onclick="">
+                                <input id="mild-carrot" name="state-carrot" type="radio">
+                                <label for="mild-carrot" onclick="">
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-Tomato" name="state-Tomato" type="radio">
-                                <label for="bad-Tomato" onclick="">
+                                <input id="severe-carrot" name="state-carrot" type="radio">
+                                <label for="severe-carrot" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
 
                                 <a></a>
                             </div>
                         </div>
-                        <!-- citrus -->
-                        <div class="pure-u-2-5">
-                            Strawberry
+                        <!-- celery -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Celery
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-strawberry" name="state-strawberry" type="radio">
-                                <label for="none-strawberry" onclick="">
+                                <input id="ok-celery" name="state-celery" type="radio">
+                                <label for="ok-celery" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
 
                                 </label>
 
-                                <input id="mild-strawberry" name="state-strawberry" type="radio">
-                                <label for="mild-strawberry" onclick="">
+                                <input id="mild-celery" name="state-celery" type="radio">
+                                <label for="mild-celery" onclick="">
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-strawberry" name="state-strawberry" type="radio">
-                                <label for="bad-strawberry" onclick="">
+                                <input id="severe-celery" name="state-celery" type="radio">
+                                <label for="severe-celery" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- cucumber -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Cucumber
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-cucumber" name="state-cucumber" type="radio">
+                                <label for="ok-cucumber" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-cucumber" name="state-cucumber" type="radio">
+                                <label for="mild-cucumber" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-cucumber" name="state-cucumber" type="radio">
+                                <label for="severe-cucumber" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- eggplant -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Eggplant
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-eggplant" name="state-eggplant" type="radio">
+                                <label for="ok-eggplant" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-eggplant" name="state-eggplant" type="radio">
+                                <label for="mild-eggplant" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-eggplant" name="state-eggplant" type="radio">
+                                <label for="severe-eggplant" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- lettuce -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Lettuce
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-lettuce" name="state-lettuce" type="radio">
+                                <label for="ok-lettuce" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-lettuce" name="state-lettuce" type="radio">
+                                <label for="mild-lettuce" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-lettuce" name="state-lettuce" type="radio">
+                                <label for="severe-lettuce" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- mushroom -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Mushroom
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-mushroom" name="state-mushroom" type="radio">
+                                <label for="ok-mushroom" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-mushroom" name="state-mushroom" type="radio">
+                                <label for="mild-mushroom" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-mushroom" name="state-mushroom" type="radio">
+                                <label for="severe-mushroom" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- onion -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Onion
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-onion" name="state-onion" type="radio">
+                                <label for="ok-onion" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-onion" name="state-onion" type="radio">
+                                <label for="mild-onion" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-onion" name="state-onion" type="radio">
+                                <label for="severe-onion" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- potato -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Potato
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-potato" name="state-potato" type="radio">
+                                <label for="ok-potato" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-potato" name="state-potato" type="radio">
+                                <label for="mild-potato" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-potato" name="state-potato" type="radio">
+                                <label for="severe-potato" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- sweetpotato -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Sweet Potato
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-sweetpotato" name="state-sweetpotato" type="radio">
+                                <label for="ok-sweetpotato" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-sweetpotato" name="state-sweetpotato" type="radio">
+                                <label for="mild-sweetpotato" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-sweetpotato" name="state-sweetpotato" type="radio">
+                                <label for="severe-sweetpotato" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="pure-u-1">
+                        <h3>Grains & Legumes</h3>
+                    </div>
+                    <section>
+                        <div class="pure-u-2-5">
+                        </div>
+                        <div class="pure-u-1-5">
+
+                            <label>
+                                <center>Ok</center>
+                            </label>
+                        </div>
+                        <div class="pure-u-1-5">
+                            <label>
+                                <center>Mild</center>
+                            </label>
+                        </div>
+                        <div class="pure-u-1-5">
+                            <label>
+                                <center>Severe</center>
+                            </label>
+                        </div>
+                        <!-- chickpeas -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Chickpeas
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-chickpeas" name="state-chickpeas" type="radio">
+                                <label for="ok-chickpeas" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-chickpeas" name="state-chickpeas" type="radio">
+                                <label for="mild-chickpeas" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-chickpeas" name="state-chickpeas" type="radio">
+                                <label for="severe-chickpeas" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- corn -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Corn
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-corn" name="state-corn" type="radio">
+                                <label for="ok-corn" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-corn" name="state-corn" type="radio">
+                                <label for="mild-corn" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-corn" name="state-corn" type="radio">
+                                <label for="severe-corn" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- lentil -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Lentil
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-lentil" name="state-lentil" type="radio">
+                                <label for="ok-lentil" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-lentil" name="state-lentil" type="radio">
+                                <label for="mild-lentil" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-lentil" name="state-lentil" type="radio">
+                                <label for="severe-lentil" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- oat -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Oat
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-oat" name="state-oat" type="radio">
+                                <label for="ok-oat" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-oat" name="state-oat" type="radio">
+                                <label for="mild-oat" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-oat" name="state-oat" type="radio">
+                                <label for="severe-oat" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- rice -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Rice
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-rice" name="state-rice" type="radio">
+                                <label for="ok-rice" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-rice" name="state-rice" type="radio">
+                                <label for="mild-rice" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-rice" name="state-rice" type="radio">
+                                <label for="severe-rice" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="pure-u-1">
+                        <h3>Proteins</h3>
+                    </div>
+                    <section>
+                        <div class="pure-u-2-5">
+                        </div>
+                        <div class="pure-u-1-5">
+
+                            <label>
+                                <center>Ok</center>
+                            </label>
+                        </div>
+                        <div class="pure-u-1-5">
+                            <label>
+                                <center>Mild</center>
+                            </label>
+                        </div>
+                        <div class="pure-u-1-5">
+                            <label>
+                                <center>Severe</center>
+                            </label>
+                        </div>
+                        <!-- chicken -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Chicken
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-chicken" name="state-chicken" type="radio">
+                                <label for="ok-chicken" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-chicken" name="state-chicken" type="radio">
+                                <label for="mild-chicken" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-chicken" name="state-chicken" type="radio">
+                                <label for="severe-chicken" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- fish -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Fish
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-fish" name="state-fish" type="radio">
+                                <label for="ok-fish" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-fish" name="state-fish" type="radio">
+                                <label for="mild-fish" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-fish" name="state-fish" type="radio">
+                                <label for="severe-fish" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- redmeat -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Red Meat
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-redmeat" name="state-redmeat" type="radio">
+                                <label for="ok-redmeat" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-redmeat" name="state-redmeat" type="radio">
+                                <label for="mild-redmeat" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-redmeat" name="state-redmeat" type="radio">
+                                <label for="severe-redmeat" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- shellfish -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Shellfish
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-shellfish" name="state-shellfish" type="radio">
+                                <label for="ok-shellfish" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-shellfish" name="state-shellfish" type="radio">
+                                <label for="mild-shellfish" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-shellfish" name="state-shellfish" type="radio">
+                                <label for="severe-shellfish" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
 
@@ -319,99 +1138,174 @@
                             </label>
                         </div>
                         <!-- Cinnamon -->
-                        <div class="pure-u-2-5">
+                        <div class="pure-u-2-5 allergen-name">
                             Cinnamon
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-Cinnamon" name="state-Cinnamon" type="radio">
-                                <label for="none-Cinnamon" onclick="">
+                                <input id="ok-cinnamon" name="state-cinnamon" type="radio">
+                                <label for="ok-cinnamon" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
 
                                 </label>
 
-                                <input id="mild-Cinnamon" name="state-Cinnamon" type="radio">
-                                <label for="mild-Cinnamon" onclick="">
+                                <input id="mild-cinnamon" name="state-cinnamon" type="radio">
+                                <label for="mild-cinnamon" onclick="">
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-Cinnamon" name="state-Cinnamon" type="radio">
-                                <label for="bad-Cinnamon" onclick="">
+                                <input id="severe-cinnamon" name="state-cinnamon" type="radio">
+                                <label for="severe-cinnamon" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
 
                                 <a></a>
                             </div>
                         </div>
-                        <!-- Garlic -->
-                        <div class="pure-u-2-5">
+                        <!-- cocoa -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Cocoa
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-cocoa" name="state-cocoa" type="radio">
+                                <label for="ok-cocoa" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-cocoa" name="state-cocoa" type="radio">
+                                <label for="mild-cocoa" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-cocoa" name="state-cocoa" type="radio">
+                                <label for="severe-cocoa" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- garlic -->
+                        <div class="pure-u-2-5 allergen-name">
                             Garlic
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-Garlic" name="state-Garlic" type="radio">
-                                <label for="none-Garlic" onclick="">
+                                <input id="ok-garlic" name="state-garlic" type="radio">
+                                <label for="ok-garlic" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
 
                                 </label>
 
-                                <input id="mild-Garlic" name="state-Garlic" type="radio">
-                                <label for="mild-Garlic" onclick="">
+                                <input id="mild-garlic" name="state-garlic" type="radio">
+                                <label for="mild-garlic" onclick="">
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-Garlic" name="state-Garlic" type="radio">
-                                <label for="bad-Garlic" onclick="">
+                                <input id="severe-garlic" name="state-garlic" type="radio">
+                                <label for="severe-garlic" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
 
                                 <a></a>
                             </div>
                         </div>
-                        <!-- Sesame -->
-                        <div class="pure-u-2-5">
+                        <!-- mustard -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Mustard
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-mustard" name="state-mustard" type="radio">
+                                <label for="ok-mustard" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-mustard" name="state-mustard" type="radio">
+                                <label for="mild-mustard" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-mustard" name="state-mustard" type="radio">
+                                <label for="severe-mustard" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- peppercorn -->
+                        <div class="pure-u-2-5 allergen-name">
+                            Peppercorn
+                        </div>
+                        <div class="pure-u-3-5">
+                            <div class="switch-toggle switch-3 switch-ios">
+                                <input id="ok-peppercorn" name="state-peppercorn" type="radio">
+                                <label for="ok-peppercorn" onclick="">
+                                    <i class="far fa-smile fa-lg"></i>
+
+                                </label>
+
+                                <input id="mild-peppercorn" name="state-peppercorn" type="radio">
+                                <label for="mild-peppercorn" onclick="">
+                                    <i class="far fa-meh fa-lg"></i>
+                                </label>
+
+                                <input id="severe-peppercorn" name="state-peppercorn" type="radio">
+                                <label for="severe-peppercorn" onclick="">
+                                    <i class="far fa-frown fa-lg"></i>
+                                </label>
+
+                                <a></a>
+                            </div>
+                        </div>
+                        <!-- sesame -->
+                        <div class="pure-u-2-5 allergen-name">
                             Sesame
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-Sesame" name="state-Sesame" type="radio">
-                                <label for="none-Sesame" onclick="">
+                                <input id="ok-sesame" name="state-sesame" type="radio">
+                                <label for="ok-sesame" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
 
                                 </label>
 
-                                <input id="mild-Sesame" name="state-Sesame" type="radio">
-                                <label for="mild-Sesame" onclick="">
+                                <input id="mild-sesame" name="state-sesame" type="radio">
+                                <label for="mild-sesame" onclick="">
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-Sesame" name="state-Sesame" type="radio">
-                                <label for="bad-Sesame" onclick="">
+                                <input id="severe-sesame" name="state-sesame" type="radio">
+                                <label for="severe-sesame" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
 
                                 <a></a>
                             </div>
                         </div>
-                        <!-- Sunflower -->
-                        <div class="pure-u-2-5">
+                        <!-- sunflower -->
+                        <div class="pure-u-2-5 allergen-name">
                             Sunflower
                         </div>
                         <div class="pure-u-3-5">
                             <div class="switch-toggle switch-3 switch-ios">
-                                <input id="none-Sunflower" name="state-Sunflower" type="radio">
-                                <label for="none-Sunflower" onclick="">
+                                <input id="ok-sunflower" name="state-sunflower" type="radio">
+                                <label for="ok-sunflower" onclick="">
                                     <i class="far fa-smile fa-lg"></i>
 
                                 </label>
 
-                                <input id="mild-Sunflower" name="state-Sunflower" type="radio">
-                                <label for="mild-Sunflower" onclick="">
+                                <input id="mild-sunflower" name="state-sunflower" type="radio">
+                                <label for="mild-sunflower" onclick="">
                                     <i class="far fa-meh fa-lg"></i>
                                 </label>
 
-                                <input id="bad-Sunflower" name="state-Sunflower" type="radio">
-                                <label for="bad-Sunflower" onclick="">
+                                <input id="severe-sunflower" name="state-sunflower" type="radio">
+                                <label for="severe-sunflower" onclick="">
                                     <i class="far fa-frown fa-lg"></i>
                                 </label>
 
@@ -420,7 +1314,15 @@
                         </div>
                     </section>
                 </form>
-            </div>
+                <center>
+                        <hr>
+                        <p>Switch to...</p>
+                        <button class="button-xlarge pure-button dietary">
+                            Dietary concerns</button>
+                        <button class="button-xlarge pure-button main">
+                            Main page</button>
+                    </center>
+                </div>
         </div>
     </div>
 </template>
