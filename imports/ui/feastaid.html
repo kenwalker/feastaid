@@ -48,7 +48,7 @@
             {{ nameForAllergen allergen }}
             </div>
             <div class="pure-u-1-5">
-                {{#if hasMileValueFor allergen }}
+                {{#if hasMildValueFor allergen }}
                     <center>{{ mildValueFor allergen}}</center>
                 {{/if}}
             </div>
@@ -62,7 +62,110 @@
     {{/each}}
     {{#if getNoAllergens }}
     <div class="pure-u-1">
+        <h4>Allergen Concerns</h4>
         There were no allergens in the results
+    </div>
+    {{/if}}
+    <div class="pure-u-1">
+        <h4>Dietary Restrictions</h4>
+    </div>
+    {{#if anyRestrictions}}
+        <div class="pure-u-3-5">
+        </div>
+        <div class="pure-u-2-5"><center>Cannot Have</center></div>
+        {{#if hasRestrictionValueFor "dairy"}}
+            <div class="pure-u-3-5">
+                Dairy
+            </div>
+            <div class="pure-u-2-5"><center>{{getRestrictionValueFor "dairy"}}</center></div>
+        {{/if}}
+        {{#if hasRestrictionValueFor "eggs"}}
+            <div class="pure-u-3-5">
+                Eggs
+            </div>
+            <div class="pure-u-2-5"><center>{{getRestrictionValueFor "eggs"}}</center></div>
+        {{/if}}
+        {{#if hasRestrictionValueFor "fish"}}
+            <div class="pure-u-3-5">
+                Fish
+            </div>
+            <div class="pure-u-2-5"><center>{{getRestrictionValueFor "fish"}}</center></div>
+        {{/if}}
+        {{#if hasRestrictionValueFor "honey"}}
+            <div class="pure-u-3-5">
+                Honey
+            </div>
+            <div class="pure-u-2-5"><center>{{getRestrictionValueFor "honey"}}</center></div>
+        {{/if}}
+        {{#if hasRestrictionValueFor "poultry"}}
+            <div class="pure-u-3-5">
+                Poultry
+            </div>
+            <div class="pure-u-2-5"><center>{{getRestrictionValueFor "poultry"}}</center></div>
+        {{/if}}
+        {{#if hasRestrictionValueFor "redmeat"}}
+            <div class="pure-u-3-5">
+                Red Meat
+            </div>
+            <div class="pure-u-2-5"><center>{{getRestrictionValueFor "redmeat"}}</center></div>
+        {{/if}}
+        {{#if hasRestrictionValueFor "shellfish"}}
+            <div class="pure-u-3-5">
+                Shellfish
+            </div>
+            <div class="pure-u-2-5"><center>{{getRestrictionValueFor "shellfish"}}</center></div>
+        {{/if}}
+        {{#if hasRestrictionValueFor "slaughter"}}
+            <div class="pure-u-3-5">
+                Slaughter by-products
+            </div>
+            <div class="pure-u-2-5"><center>{{getRestrictionValueFor "slaughter"}}</center></div>
+        {{/if}}
+    {{else}}
+        <div class="pure-u-1">
+            There were no restrictions in the results
+        </div>
+    {{/if}}
+    <div class="pure-u-1">
+        <h4>Religious or Special Diet</h4>
+    </div>
+    {{#if anyDiets }}
+        <div class="pure-u-3-5">
+        </div>
+        <div class="pure-u-2-5"><center>Following Diet</center></div>
+        {{#if hasDietValueFor "halal"}}
+            <div class="pure-u-3-5">
+                Halal
+            </div>
+            <div class="pure-u-2-5"><center>{{getDietValueFor "halal"}}</center></div>
+        {{/if}}
+        {{#if hasDietValueFor "keto"}}
+            <div class="pure-u-3-5">
+                Keto
+            </div>
+            <div class="pure-u-2-5"><center>{{getDietValueFor "keto"}}</center></div>
+        {{/if}}
+        {{#if hasDietValueFor "kosher"}}
+            <div class="pure-u-3-5">
+                Kosher
+            </div>
+            <div class="pure-u-2-5"><center>{{getDietValueFor "kosher"}}</center></div>
+        {{/if}}
+        {{#if hasDietValueFor "paleo"}}
+            <div class="pure-u-3-5">
+                Paleo
+            </div>
+            <div class="pure-u-2-5"><center>{{getDietValueFor "paleo"}}</center></div>
+        {{/if}}
+        {{#if hasDietValueFor "vegan"}}
+            <div class="pure-u-3-5">
+                Vegan
+            </div>
+            <div class="pure-u-2-5"><center>{{getDietValueFor "vegan"}}</center></div>
+        {{/if}}
+    {{else}}
+    <div class="pure-u-1">
+            There are no religious or special diets
     </div>
     {{/if}}
     </div>

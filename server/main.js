@@ -110,7 +110,7 @@ Meteor.startup(() => {
               case 0:
                 doc['restrictions'][restriction].ok++;
                 break;
-              case 2:
+              case 1:
                 doc['restrictions'][restriction].notok++;
                 break;
             }

@@ -52,10 +52,37 @@ Template.overview.helpers({
     allAllergens() {
         return Object.keys(ALLERGEN_LIST);
     },
+    anyDiets() {
+        return DIET.find(function (dietType) {
+            console.log(this.diet);
+            return this.diet[dietType].count > 0;
+        }.bind(this));
+    },
+    hasDietValueFor(name) {
+        return this.diet[name].count > 0;
+    },
+    getDietValueFor(name) {
+        return this.diet[name].count;
+    },
+    allRestrictions() {
+        return Object.keys(ALLERGEN_LIST);
+    },
+    anyRestrictions() {
+        return RESTRICTIONS.find(function (restriction) {
+            console.log(this.restrictions);
+            return this.restrictions[restriction].notok > 0
+        }.bind(this));
+    },
+    hasRestrictionValueFor(name) {
+        return this.restrictions[name].notok > 0;
+    },
+    getRestrictionValueFor(name) {
+        return this.restrictions[name].notok;
+    },
     nameForAllergen(name) {
         return ALLERGEN_LIST[name];
     },
-    hasMileValueFor(name) {
+    hasMildValueFor(name) {
         return this.allergens[name].mild > 0;
     },
     mildValueFor(name) {
