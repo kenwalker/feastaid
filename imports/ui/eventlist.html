@@ -6,8 +6,8 @@
             </div>
             <div class="content">
                 <p>Choose an event and FeastAid will retrieve the list of attendees, cross reference with the users who have
-                    registered their preferences on this application and produce a list of Allergen and Dietary needs. Only
-                    events you have been invited to or have said you are attending will show up.</p>
+                    registered their preferences and produce a list of Allergen and Dietary needs. Only
+                    events for which you are an administrator or a co-host will appear below.</p>
                 <hr> {{#if searching}}
                 <center>
                     <p>Finding events...</p>
@@ -18,8 +18,8 @@
                         {{#each events}} {{> event}} {{/each}}
                     </ul>
                 </div>
-                {{else}} You have no upcoming events you are invited to or attending. You must be invited to an Event to see it in order
-                to generate the Allergen and Dietary lists.<br>I'm sure you'll get invited to something really soon..... {{/if}} {{/if}}
+                {{else}} You have no upcoming events for which you are the admin or co-host for. If you are planning the meals for an event
+                get the Event organizer to add you as a co-host.{{/if}} {{/if}}
                 <center>
                     <button class="button-xlarge pure-button main">
                         Main page</button>

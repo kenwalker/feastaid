@@ -12,28 +12,24 @@ Meteor.startup(() => {
     try {
       if (Meteor.user()) {
         var accessToken = Meteor.user().services.facebook.accessToken;
-        var response = HTTP.get("https://graph.facebook.com/v2.11/me/events/not_replied?fields=id%2Cname%2Cstart_time%2Cevent_times&since=now&access_token=" + accessToken);
+        var attendingURL = "https://graph.facebook.com/v2.11/me/events/attending?fields=id%2Cname%2Cstart_time%2Cevent_times&since=now&access_token=" + accessToken;
+        var response = HTTP.get(attendingURL);
         _.each(response.data.data, function (item) {
           if (!item.event_times) {
-            var doc = {
-              id: item.id,
-              name: item.name,
-              start_time: new Date(item.start_time),
-              status: 0
-            };
-            self.added('events', Random.id(), doc);
-          }
-        });
-        var response = HTTP.get("https://graph.facebook.com/v2.11/me/events/attending?fields=id%2Cname%2Cstart_time%2Cevent_times&since=now&access_token=" + accessToken);
-        _.each(response.data.data, function (item) {
-          if (!item.event_times) {
-            var doc = {
-              id: item.id,
-              name: item.name,
-              start_time: new Date(item.start_time),
-              status: 1
-            };
-            self.added('events', Random.id(), doc);
+            var adminsURL = "https://graph.facebook.com/v2.11/" + item.id + "/admins?access_token=" + accessToken;
+            var response = HTTP.get(adminsURL);
+            var amAdmin = response.data.data.find(function(anAdmin) {
+              return anAdmin.id === Meteor.user().services.facebook.id;
+            })
+            if (amAdmin) {
+              var doc = {
+                id: item.id,
+                name: item.name,
+                start_time: new Date(item.start_time),
+                status: 1
+              };
+              self.added('events', Random.id(), doc);
+            }
           }
         });
       }

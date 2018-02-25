@@ -12,14 +12,14 @@ scrollToTop = null;
 
 Meteor.startup(function () {
 
-  var mediaQueryList = window.matchMedia('print');
-  mediaQueryList.addListener(function(mql) {
-    if (mql.matches) {
-        console.log('onbeforeprint equivalent');
-    } else {
-        console.log('onafterprint equivalent');
-    }
-  });
+  // var mediaQueryList = window.matchMedia('print');
+  // mediaQueryList.addListener(function(mql) {
+  //   if (mql.matches) {
+  //       console.log('onbeforeprint equivalent');
+  //   } else {
+  //       console.log('onafterprint equivalent');
+  //   }
+  // });
 
   Accounts.ui.config({
     requestPermissions: {
