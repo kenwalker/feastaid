@@ -9,6 +9,7 @@ toggleAll = null;
 toggleClass = null;
 eventHandle = null;
 scrollToTop = null;
+getParameterByName = null;
 
 Meteor.startup(function () {
 
@@ -20,6 +21,16 @@ Meteor.startup(function () {
   //       console.log('onafterprint equivalent');
   //   }
   // });
+
+  getParameterByName = function (name) {
+    var url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
 
   Accounts.ui.config({
     requestPermissions: {
@@ -44,7 +55,7 @@ Meteor.startup(function () {
     // eventHandle.stop();
   })
 
-  scrollToTop = function() {
+  scrollToTop = function () {
     $("html, body").animate({ scrollTop: 0 }, "slow");
   };
 

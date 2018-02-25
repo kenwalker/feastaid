@@ -9,8 +9,6 @@ var noAllergens = true;
 var currentAllergenGroup = "";
 var currentAllergenCount = 0;
  
-console.log("asdf");
-
 var allergenIndex = function() {
     switch (true) {
         case (currentAllergenCount <= 7):

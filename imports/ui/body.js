@@ -8,6 +8,7 @@ import './eventlist.js';
 import './allergens.js';
 import './dietary.js';
 import './feastaid.js';
+import './privacy.js';
 import './body.html';
 
 Template.body.onRendered(function bodyOnRendered() {
@@ -25,6 +26,11 @@ Template.body.onRendered(function bodyOnRendered() {
   };
 
   hookContentMenuToggle();
+
+  var requestPage = getParameterByName("page");
+  if (requestPage) {
+    Session.set("templateName", requestPage);
+  }
 });
 
 Template.body.onCreated(function bodyOnCreated() {
@@ -88,6 +94,14 @@ Template.body.events({
       return;
     }
     Session.set("templateName", "dietary");
+    setTimeout(hookContentMenuToggle, 100);
+    setTimeout(scrollToTop, 200);
+  },
+  "click .privacy": function() {
+    if (Session.get("templateName") === "privacy") {
+      return;
+    }
+    Session.set("templateName", "privacy");
     setTimeout(hookContentMenuToggle, 100);
     setTimeout(scrollToTop, 200);
   },
