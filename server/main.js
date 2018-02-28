@@ -126,4 +126,20 @@ Meteor.startup(() => {
       console.log(error);
     }
   });
+
+  Meteor.methods({
+    'deleteData'() {
+      var filter = { userId: Meteor.user()._id};
+      var accessToken = Meteor.user().services.facebook.accessToken;
+      var fbID = Meteor.user().services.facebook.id;
+      var deleteAppURL = "https://graph.facebook.com/v2.11/" + fbID + "/permissions?access_token=" + accessToken;
+
+      Allergens.remove(filter);
+      Dietary.remove(filter);
+      var response = HTTP.del(deleteAppURL);
+      Meteor.users.remove(Meteor.user()._id);
+      return true;
+    }
+  });
+
 });
