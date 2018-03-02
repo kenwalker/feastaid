@@ -1,6 +1,9 @@
 /* CSS declarations go here */
 /* layers control */
 
+a {
+    cursor: pointer;
+}
 .dietarycheckbox {
     padding-top: 8px;
 }
