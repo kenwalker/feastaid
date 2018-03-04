@@ -13,13 +13,13 @@ var allergenIndex = function() {
     switch (true) {
         case (currentAllergenCount <= 7):
             return 0;
-        case (currentAllergenCount <= 19):
+        case (currentAllergenCount <= 20):
             return 1;
-        case (currentAllergenCount <= 30):
+        case (currentAllergenCount <= 31):
             return 2;
-        case (currentAllergenCount <= 35):
+        case (currentAllergenCount <= 36):
             return 3;
-        case (currentAllergenCount <= 39):
+        case (currentAllergenCount <= 40):
             return 4;
         default:
             return 5;

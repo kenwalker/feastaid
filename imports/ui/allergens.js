@@ -23,7 +23,6 @@ Template.allergens.helpers({
 });
 
 function stateObjectFor(radioCategory) {
-    console.log(ALLERGEN_LIST)
     var currentlySelected = $("input[name='state-" + radioCategory + "']:checked");
     if (currentlySelected.length === 0) {
         return 0;
@@ -54,14 +53,13 @@ function getJSONforAllergens() {
 }
 
 function updateAllergensFromJSON() {
-    console.log();
     var allergenRecord = Allergens.findOne();
     if (!allergenRecord) {
         // User is not logged in or some other error
         location.reload();
     }
     Object.keys(ALLERGEN_LIST).forEach(function (allergen) {
-        var currentState = allergenRecord[allergen];
+        var currentState = allergenRecord[allergen] || 0;
         switch (currentState) {
             case 0:
                 $("#ok-" + allergen).attr('checked', 'checked');

@@ -7,7 +7,7 @@ export const Allergens = new Mongo.Collection('allergens');
 export const ALLERGEN_LIST = {
   'eggs' : 'Eggs', 'latex': 'Latex', 'milk':'Milk', 'peanuts':'Peanuts', 'soy':'Soy', 
   'treenuts': 'Tree Nuts', 'nonwheatgluten':'Non Wheat Gluten', 'wheat':'Wheat',
-  'apple':'Apple', 'avocado':'Avocado', 'citrus':'Citrus', 'kiwi':'Kiwi', 'melons':'Melons', 
+  'apple':'Apple', 'avocado':'Avocado', 'citrus':'Citrus', 'coconut':'Coconut', 'kiwi':'Kiwi', 'melons':'Melons', 
   'pear':'Pear', 'peppers':'Peppers', 'pineapple':'Pineapple', 'stonefruits':'Stone Fruits', 
   'strawberry':'Strawberry', 'tomato':'Tomato', 'zucchini':'Zucchini',
   'beet':'Beet', 'cabbage':'Cabbage', 'carrot':'Carrot', 'celery':'Celery', 'cucumber':'Cucumber',
