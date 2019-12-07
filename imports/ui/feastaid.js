@@ -4,25 +4,27 @@ import { ALLERGEN_LIST } from '../api/allergens.js';
 
 import './feastaid.html';
 
-var allergenGroups = ["Common Allergens", "Fruits", "Vegetables", "Grains & Legumes", "Proteins", "Herbs, Spices & Other"];
+var allergenGroups = ["Common Allergens", "Tree Nuts", "Fruits", "Vegetables", "Grains & Legumes", "Proteins", "Herbs, Spices & Other"];
 var noAllergens = true;
 var currentAllergenGroup = "";
 var currentAllergenCount = 0;
  
 var allergenIndex = function() {
     switch (true) {
-        case (currentAllergenCount <= 7):
+        case (currentAllergenCount <= 6):
             return 0;
-        case (currentAllergenCount <= 20):
+        case (currentAllergenCount <= 15):
             return 1;
-        case (currentAllergenCount <= 31):
+        case (currentAllergenCount <= 28):
             return 2;
-        case (currentAllergenCount <= 36):
+        case (currentAllergenCount <= 39):
             return 3;
-        case (currentAllergenCount <= 40):
+        case (currentAllergenCount <= 44):
             return 4;
-        default:
+        case (currentAllergenCount <= 48):
             return 5;
+        default:
+            return 6;
     }
 };
 
